@@ -11,11 +11,11 @@
 
 **Libraries which I used to built this application**
 
-1)Retrofit2 
-2)de.hdodenhof:circleimageview:2.2.0 
-3)com.squareup.picasso:picasso:2.71828 
-4)com.android.support:recyclerview-v7:27.0.2 
-5)com.android.support:cardview-v7:27.0.2 
+1) Retrofit2 
+2) de.hdodenhof:circleimageview:2.2.0 
+3) com.squareup.picasso:picasso:2.71828 
+4) com.android.support:recyclerview-v7:27.0.2 
+5) com.android.support:cardview-v7:27.0.2 
 
 **Approach**
 

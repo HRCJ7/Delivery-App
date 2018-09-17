@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Deliver App</string>
+    <string name="title_activity_detail">Delivery Detail</string>
+    <string name="title_activity_main">Delivery List</string>
+</resources>

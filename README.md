@@ -9,7 +9,7 @@
 5) Add marker on the map based on the provided lat/lng
 
 
-**Libraries which used to built this application**
+**Libraries which I used to built this application**
 
 1)Retrofit2
 2)de.hdodenhof:circleimageview:2.2.0

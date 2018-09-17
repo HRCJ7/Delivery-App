@@ -4,11 +4,9 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.util.List;
@@ -51,10 +49,7 @@ public class MainActivity extends AppCompatActivity {
         EndlessRecyclerViewScrollListener scrollListener = new EndlessRecyclerViewScrollListener((LinearLayoutManager) layoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
-                // Triggered only when new data needs to be appended to the list
-                // Add whatever code is needed to append new items to the bottom of the list
-                Log.e("page", String.valueOf(page));
-                Log.e("totalItemsCount", String.valueOf(totalItemsCount));
+
                 loadNextDataFromApi(totalItemsCount, thingsDataList);
             }
         };
@@ -72,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadNextDataFromApi(int offset, final List<Thing> thingsDataList) {
 
-        Log.e("Scroll", String.valueOf(offset));
+
         /*Create handle for the RetrofitInstance interface*/
         GetThingsDataService service = RetrofitInstance.getRetrofitInstance(MainActivity.this, isOnline()).create(GetThingsDataService.class);
 

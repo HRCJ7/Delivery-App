@@ -1,9 +1,7 @@
 package rajitha.perera.com.thingstodeliver.activity;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -26,7 +24,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        CircleImageView imageView = (CircleImageView) findViewById(R.id.image_view);
+        CircleImageView imageView = findViewById(R.id.image_view);
         TextView description = findViewById(R.id.description);
         TextView address = findViewById(R.id.address);
 
@@ -35,7 +33,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
             Thing thing = getIntent().getExtras().getParcelable("Thing");
             longitude = thing.getLocation().getLat();
             latitude = thing.getLocation().getLng();
-            Log.e("image", thing.getImageUrl());
+
             Picasso.get().load(thing.getImageUrl()).into(imageView);
             description.setText(thing.getDescription());
             address.setText(thing.getLocation().getAddress());

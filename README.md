@@ -2,7 +2,7 @@
 
 # Delivery-App
 
-**Special Note - Here I developed this code using two machines. personal and office machine.That is why this code shows 2 contributers.**
+**Special Note - Here I developed this code using two Git Profiles.That is because I was using two Git Profiles( machine and Personal) to develop this code. So please neglect that issue.**
 
 **What are the features that the given application provide**
 
